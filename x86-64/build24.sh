@@ -66,8 +66,14 @@ PACKAGES="$PACKAGES luci-i18n-dufs-zh-cn"
 # ======== shell/custom-packages.sh =======
 # 合并imm仓库以外的第三方插件
 PACKAGES="$PACKAGES $CUSTOM_PACKAGES"
-
-
+PACKAGES="$PACKAGES luci-app-wireguard
+PACKAGES="$PACKAGES luci-app-smartdns 
+PACKAGES="$PACKAGES luci-app-openai 
+PACKAGES="$PACKAGES luci-app-store 
+PACKAGES="$PACKAGES luci-app-ttyd 
+PACKAGES="$PACKAGES luci-app-pushbot 
+PACKAGES="$PACKAGES luci-app-argon-config qrencode
+PACKAGES="$PACKAGES luci-app-lucky
 # 判断是否需要编译 Docker 插件
 if [ "$INCLUDE_DOCKER" = "yes" ]; then
     PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
